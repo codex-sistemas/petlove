@@ -1,0 +1,54 @@
+<app-modal id="install-modal">
+    <app-column style="
+            width: 90%;
+            max-height: min-content;
+            padding: 2rem;
+            gap: 1rem;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            border-radius: 1rem;
+        ">
+
+        <h2 style="
+                margin: 0;
+                color: var(--color-primary);
+                text-align: center;
+            ">
+            Instalar PetLove
+        </h2>
+
+        <span style="
+                text-align: center;
+            ">
+            Deseja instalar o PetLove como aplicativo?
+        </span>
+
+        <app-row style="
+                max-height: 3.5rem;
+                gap: 1rem;
+                justify-content: center;
+            ">
+
+            <button style="
+                    padding: 0.75rem;
+                    border: none;
+                    border-radius: 0.5rem;
+                    background-color: var(--color-secondary);
+                " onclick="this.closest('app-modal').remove()">
+                Agora não
+            </button>
+
+            <button style="
+                    padding: 0.75rem;
+                    border: none;
+                    border-radius: 0.5rem;
+                    background-color: var(--color-primary);
+                    color: var(--color-background);
+                " onclick="APP.install.installPWA()">
+                Instalar
+            </button>
+
+        </app-row>
+
+    </app-column>
+</app-modal>

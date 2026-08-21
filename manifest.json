@@ -1,0 +1,19 @@
+{
+    "name": "PetLove",
+    "short_name": "PetLove",
+    "description": "Organize e cuide da saúde, rotina e bem-estar do seu pet.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ff3d3d",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "./assets/images/logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

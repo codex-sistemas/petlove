@@ -1,0 +1,88 @@
+<app-row style="
+            max-height: 5rem;
+            background-color: var(--color-background);
+            border-top: .1rem solid var(--color-primary);
+            justify-content: space-between;
+        ">
+
+    <button data-page-nav-bar="home" style="
+                color: var(--color-text);
+                border: none;
+                font-size: 1.2rem;
+                padding: 0rem;
+                width: 100%;
+            " onclick="APP.navigate('home')">
+        <app-column>
+            <span style=" font-size: 2rem; ">
+                🏠︎
+            </span>
+            <span style=" font-size: 1rem; ">
+                Início
+            </span>
+        </app-column>
+
+    </button>
+
+
+    <button data-page-nav-bar="meus-pets" style="
+                color: var(--color-text);
+                border: none;
+                font-size: 1.2rem;
+                padding: 0rem;
+                width: 100%;
+            " onclick="APP.navigate('meus-pets')">
+        <app-column>
+            <span style=" font-size: 2rem; ">
+                🐾
+            </span>
+            <span style=" font-size: 1rem; ">
+                Meus Pets
+            </span>
+        </app-column>
+
+    </button>
+
+
+    <button data-page-nav-bar="notifications" style="
+                color: var(--color-text);
+                border: none;
+                font-size: 1.2rem;
+                padding: 0rem;
+                width: 100%;
+            " onclick="APP.navigate('notifications')">
+        <app-column>
+            <span style=" font-size: 2rem; ">
+                🔔
+            </span>
+            <span style=" font-size: 1rem; ">
+                Notificações
+            </span>
+        </app-column>
+
+    </button>
+
+
+    <button data-page-nav-bar="profile" style="
+                color: var(--color-text);
+                border: none;
+                font-size: 1.2rem;
+                padding: 0rem;
+                width: 100%;
+            " onclick="APP.navigate('profile')">
+
+        <app-column>
+            <span style="
+                    font-size: 2rem;
+                ">
+                👤
+            </span>
+
+            <span style="
+                    font-size: 1rem;
+                ">
+                Perfil
+            </span>
+        </app-column>
+    </button>
+
+</app-row>

@@ -1,0 +1,150 @@
+.profile-page {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    gap: 0;
+}
+
+.profile-content {
+    flex: 1;
+    min-height: 0;
+
+    padding: 2rem;
+
+    gap: 1.5rem;
+
+    align-items: center;
+}
+
+
+/* Seções */
+
+.profile-section {
+    width: 100%;
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.75rem;
+}
+
+
+/* Cabeçalho do perfil */
+
+.profile-header {
+    align-items: center;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    background-color: var(--color-surface);
+}
+
+.profile-name {
+    margin: 0;
+
+    font-size: 2rem;
+
+    color: var(--color-text);
+
+    text-align: center;
+}
+
+.profile-email {
+    font-size: 1.1rem;
+
+    opacity: 0.65;
+
+    text-align: center;
+}
+
+
+/* Botão principal */
+
+.primary-button {
+    margin-top: 0.5rem;
+
+    padding: 0.65rem 1.2rem;
+
+    border: 0;
+    border-radius: 0.75rem;
+
+    background-color: var(--color-primary);
+    color: white;
+
+    font-size: 0.9rem;
+
+    cursor: pointer;
+}
+
+
+/* Títulos */
+
+.section-title {
+    margin: 0;
+
+    font-size: 1.1rem;
+}
+
+
+/* Cards */
+
+.options-card {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 1rem;
+
+    overflow: hidden;
+
+    background-color: var(--color-surface);
+}
+
+
+/* Botões */
+
+.option-button {
+    width: 100%;
+
+    min-height: 3rem;
+
+    padding: 0.75rem 1rem;
+
+    border: 0;
+
+    background: transparent;
+
+    color: var(--color-text);
+
+    text-align: left;
+
+    font-size: 0.9rem;
+
+    cursor: pointer;
+}
+
+.option-button:hover {
+    background-color: var(--color-secondary);
+}
+
+.option-border {
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+/* Versão */
+
+.version {
+    padding: 0.75rem 1rem;
+
+    font-size: 1rem;
+
+    opacity: 0.5;
+}
