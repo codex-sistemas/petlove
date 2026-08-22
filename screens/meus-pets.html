@@ -1,0 +1,137 @@
+<link rel="stylesheet" href="./css/meus-pets.css">
+
+<app-column class="pets-page">
+
+    <app-header></app-header>
+
+    <app-column class="pets-content scroll-y-on" onload="APP.actions.loadItems(this)">
+
+        <div class="pets-header">
+
+            <h1>
+                Meus Pets
+            </h1>
+
+            <span>
+                Gerencie os seus pets e acompanhe suas informações.
+            </span>
+
+        </div>
+
+
+        <!-- Adicionar pet -->
+        <button class="add-pet-button" onclick="APP.navigate('edit_pets', '')">
+            + Adicionar pet
+        </button>
+
+
+        <!-- Rex -->
+        <div class="pet-card" onclick="APP.navigate('edit_pets', 'Rex')">
+
+            <img src="./assets/images/pet-placeholder.png" alt="Rex" class="pet-photo">
+
+            <div class="pet-info">
+
+                <strong>
+                    Rex
+                </strong>
+
+                <span>
+                    Cachorro • 4 anos
+                </span>
+
+                <small>
+                    Macho
+                </small>
+
+            </div>
+
+            <span class="pet-arrow">
+                ›
+            </span>
+
+        </div>
+
+
+        <!-- Mel -->
+        <div class="pet-card" onclick="APP.navigate('edit_pets', 'Mel')">
+
+            <img src="./assets/images/pet-placeholder.png" alt="Mel" class="pet-photo">
+
+            <div class="pet-info">
+
+                <strong>
+                    Mel
+                </strong>
+
+                <span>
+                    Gato • 2 anos
+                </span>
+
+                <small>
+                    Fêmea
+                </small>
+
+            </div>
+
+            <span class="pet-arrow">
+                ›
+            </span>
+
+        </div>
+
+
+        <!-- Thor -->
+        <div class="pet-card" onclick="APP.navigate('edit_pets', 'Thor')">
+
+            <img src="./assets/images/pet-placeholder.png" alt="Thor" class="pet-photo">
+
+            <div class="pet-info">
+
+                <strong>
+                    Thor
+                </strong>
+
+                <span>
+                    Cachorro • 7 anos
+                </span>
+
+                <small>
+                    Macho
+                </small>
+
+            </div>
+
+            <span class="pet-arrow">
+                ›
+            </span>
+
+        </div>
+
+
+        <!-- Estado vazio -->
+
+        <!--
+        <div class="empty-pets">
+
+            <span class="empty-pets-icon">
+                🐾
+            </span>
+
+            <strong>
+                Você ainda não possui pets
+            </strong>
+
+            <span>
+                Adicione seu primeiro pet para começar a acompanhar
+                sua saúde e rotina.
+            </span>
+
+        </div>
+        -->
+
+    </app-column>
+
+    <app-nav-bar active="meus-pets"></app-nav-bar>
+
+</app-column>

@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="./css/profile.css">
+
+<app-column class="profile-page">
+
+    <app-header></app-header>
+
+    <app-column class="profile-content scroll-y-on">
+
+        <!-- Perfil -->
+        <div class="profile-section profile-header">
+
+            <img id="profile-tutor-photo" src="./assets/images/user-placeholder.png" alt="Foto do tutor"
+                class="profile-photo">
+
+            <h1 id="profile-tutor-name" class="profile-name">
+                Nome do Tutor
+            </h1>
+
+            <span id="profile-tutor-email" class="profile-email">
+                email@tutor.com
+            </span>
+
+            <button class="primary-button" onclick="APP.navigate('edit_profile')">
+                Editar perfil
+            </button>
+
+        </div>
+
+
+        <!-- Preferências -->
+        <div class="profile-section">
+
+            <h2 class="section-title">
+                Preferências
+            </h2>
+
+            <div class="options-card">
+
+                <button class="option-button option-border" onclick="APP.navigate('config')">
+                    Configurações
+                </button>
+
+                <button class="option-button" onclick="APP.loadModal('signOut')">
+                    Sair da conta
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Sobre -->
+        <div class="profile-section">
+
+            <h2 class="section-title">
+                PetLove
+            </h2>
+
+            <div class="options-card">
+
+                <button class="option-button option-border" onclick="APP.navigate('sobre')">
+                    Sobre o PetLove
+                </button>
+
+                <button class="option-button option-border" onclick="APP.navigate('creditos')">
+                    Créditos
+                </button>
+
+            </div>
+
+            <span class="version">
+                Versão 1.0.4
+            </span>
+
+        </div>
+
+    </app-column>
+
+    <app-nav-bar active="profile"></app-nav-bar>
+
+</app-column>

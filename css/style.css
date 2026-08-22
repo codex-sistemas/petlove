@@ -1,0 +1,110 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    touch-action: none;
+    user-select: none;
+}
+
+/* Splash Screen */
+.app-container #splash {
+    background-color: var(--color-primary);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container #splash img {
+    width: 25%;
+    /* border-radius: 100rem;
+    background-color: white; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.background {
+    background-color: var(--color-background-window);
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    width: var(--width-mobile);
+    height: 100svh;
+    background-color: var(--color-primary);
+    font-size: 2rem;
+    color: var(--color-text);
+}
+
+/* Scroll */
+.scroll-y-on {
+    justify-content: flex-start;
+    overflow-y: auto;
+    min-height: 0
+}
+
+.scroll-x-on {
+    justify-content: flex-start;
+    overflow-x: auto;
+    min-width: 0
+}
+
+/* Permite que os elementos solo em app-row, preencha todo o app-row */
+/* app-row>* {
+    width: 100%;
+    box-sizing: border-box;
+} */
+
+/* Impedir arrastar imagem pelo web app */
+.app-container img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+/* padrão de tamanho para mobile */
+.app-container button,
+.app-container input,
+.app-container textarea,
+.app-container select {
+    font-size: 1.5rem;
+    min-height: 2rem;
+    max-width: 100%;
+}
+
+/* padrão de propriedades para mobile */
+.app-container button,
+.app-container label,
+.app-container span,
+.app-container input,
+.app-container textarea,
+.app-container select,
+.app-container option {
+    align-items: center;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    resize: none;
+    /* color: var(--color-text); */
+}
+
+
+.app-container label {
+    text-align: center;
+}
+
+.app-container textarea,
+.app-container select,
+.app-container option {
+    font-size: 1.25rem;
+}
+
+.app-container button:active {
+    background-color: var(--color-secondary);
+}

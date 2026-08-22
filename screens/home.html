@@ -1,0 +1,211 @@
+<app-column style="
+    background-color: var(--color-background);
+    color: var(--color-text);
+    gap: 0;
+">
+
+    <app-header></app-header>
+
+
+    <app-column class="scroll-y-on" style="
+        flex: 1;
+        min-height: 0;
+        padding: 2rem;
+        gap: 1.5rem;
+        align-items: center;
+    ">
+
+        <!-- Saudação -->
+        <div style="
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        ">
+
+            <span style="
+                font-size: 0.95rem;
+                opacity: 0.65;
+            ">
+                Olá, Tutor(a)
+            </span>
+
+            <h1 style="
+                margin: 0;
+                font-size: 2rem;
+                color: var(--color-primary);
+            ">
+                Como estão seus pets?
+            </h1>
+
+        </div>
+
+
+        <!-- Resumo dos pets -->
+        <div style="
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            gap: 1rem;
+        ">
+
+            <div style="
+                flex: 1;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.35rem;
+                border-radius: 1rem;
+                background-color: var(--color-surface);
+            ">
+
+                <span style="
+                    font-size: 0.85rem;
+                    opacity: 0.65;
+                ">
+                    Meus pets
+                </span>
+
+                <strong style="
+                    font-size: 1.8rem;
+                    color: var(--color-primary);
+                ">
+                    3
+                </strong>
+
+            </div>
+
+
+            <div style="
+                flex: 1;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.35rem;
+                border-radius: 1rem;
+                background-color: var(--color-surface);
+            ">
+
+                <span style="
+                    font-size: 0.85rem;
+                    opacity: 0.65;
+                ">
+                    Lembretes
+                </span>
+
+                <strong style="
+                    font-size: 1.8rem;
+                    color: var(--color-primary);
+                ">
+                    2
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- Próximos eventos -->
+        <div style="
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        ">
+
+            <h2 style="
+                margin: 0;
+                font-size: 1.2rem;
+            ">
+                Próximos eventos
+            </h2>
+
+
+            <!-- Consulta -->
+            <div style="
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                border-radius: 1rem;
+                background-color: var(--color-surface);
+                flex-shrink: 0;
+            ">
+
+                <span style="
+                    font-size: 1.5rem;
+                ">
+                    🩺
+                </span>
+
+                <div style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2rem;
+                ">
+
+                    <strong>
+                        Consulta veterinária
+                    </strong>
+
+                    <span style="
+                        font-size: 0.85rem;
+                        opacity: 0.65;
+                    ">
+                        Rex • Amanhã às 14:00
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Vacina -->
+            <div style="
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                border-radius: 1rem;
+                background-color: var(--color-surface);
+                flex-shrink: 0;
+            ">
+
+                <span style="
+                    font-size: 1.5rem;
+                ">
+                    💉
+                </span>
+
+                <div style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2rem;
+                ">
+
+                    <strong>
+                        Vacina
+                    </strong>
+
+                    <span style="
+                        font-size: 0.85rem;
+                        opacity: 0.65;
+                    ">
+                        Mel • Vencimento em 5 dias
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </app-column>
+
+
+    <app-nav-bar active="home"></app-nav-bar>
+
+</app-column>
